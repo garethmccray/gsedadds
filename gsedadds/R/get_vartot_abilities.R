@@ -16,12 +16,12 @@ get_vartot_abilities<-function(bin_width=3, distribution_table, ...){
 
   if(36%%bin_width!=0){stop("bin_width must be a multiple of 36.")}
 
-  months_vec = seq(0,36,by=bin_width)
-  nn = length(months_vec)
+  month_vec = seq(0,36,by=bin_width)
+  nn = length(month_vec)
   
-  var_abilities_df = data.frame(month_min = months_vec[-nn]) %>% 
-                      transform(month_max = months_min+bin_width-1E-4) %>% 
-                      transform(bin = mapvalues(month_min, from = months_vec[-nn], to = seq(1,nn-1,by=1)), var_est= NA)
+  var_abilities_df = data.frame(month_min = month_vec[-nn]) %>% 
+                      transform(month_max = month_min+bin_width-1E-4) %>% 
+                      transform(bin = mapvalues(month_min, from = month_vec[-nn], to = seq(1,nn-1,by=1)), var_est= NA)
   
   for (i in 1:nrow(var_abilities_df)){
     theta_vec_i = do.call(what = "simulate_abilities", 
