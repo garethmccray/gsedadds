@@ -1,0 +1,31 @@
+Package: gsedadds
+Title: Additional functions for the gseddata package
+Version: 0.0.0
+Authors@R: 
+    person(given = "First",
+           family = "Last",
+           role = c("aut", "cre"),
+           email = "first.last@example.com")
+Author: Marcus Waldman <marcus_waldman@gse.harvard.edu>
+Maintainer: Marcus Waldman <marcus_waldman@gse.harvard.edu>
+Description: Additional analysis functions to analyze results
+    from gseddata. This includes simulating abilities and item information
+    properties.
+License: MIT
+URL: http://www.github.com/marcus-waldman/gsedadds
+Depends: 
+    R (>= 3.5.0)
+Imports: 
+    data.table (>= 1.11.8),
+    doParallel (>= 1.0.11),
+    doRNG (>= 1.7.1),
+    foreach (>= 1.4.4),
+    gseddata (>= 1.0.99),
+    miceadds (>= 2.14-26),
+    plyr (>= 1.8.4),
+    reshape2 (>= 1.4.3),
+    stats (>= 3.5.0),
+    tidyverse (>= 1.2.1)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
