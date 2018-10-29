@@ -1,6 +1,6 @@
 Package: gsedadds
 Title: Additional functions for the gseddata package
-Version: 0.0.0
+Version: 0.0.1
 Authors@R: 
     person(given = "First",
            family = "Last",
