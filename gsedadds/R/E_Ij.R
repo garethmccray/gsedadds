@@ -1,4 +1,4 @@
-#' Expected item information
+#' Expected item information function
 #'
 #' This function calculates the expected information contributed by the the j-th item in a provided age interval. Note: Assumes logit link.
 #' @param alpha_j - (numeric) discrimination parameter estimate
